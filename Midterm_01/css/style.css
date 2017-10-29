@@ -1,0 +1,175 @@
+/* universal selector, apply this to everything on the page and get rid of the default margins and padding*/
+* {
+	margin:0;
+	padding:0;
+}
+
+header {
+	width:100%;
+	height: 100px;
+	background-color: #E0FFFF;
+	font-family: "Courier New";
+	font-size:25px;
+	padding-top:40px;
+}
+
+header nav {
+	width: 90%;
+	height:50%;
+	margin: 0 auto;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.container-images {
+	max-width: 100%;
+	margin: auto; 
+}
+.column {
+    float: left;
+    width: 23.50009%;
+    padding-right: .6%;
+    padding-left:.6%;
+    margin-bottom: 1px;
+
+}
+
+.column img {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 2px; 
+
+}
+.container {
+	position: relative;
+	width:100%;
+}
+
+.baguette_polaroid{
+	/*margin-left: 100px;*/
+}
+.row{
+	margin-left:1%;
+	/*margin-right:2%;*/
+	position: absolute;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    position: absolute;
+}
+
+/*whenever we float, we need to apply this clearfix to the parent/wrapper/container element*/
+.clear-fix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#logo {
+	max-width: 40%;
+	float: left;
+	line-height: 50px;
+}
+	
+#logo a {
+	text-decoration: none;
+}
+
+#main-nav{
+	max-width: 60%;
+	float: right;
+	list-style-type: none;
+	line-height: 50px;
+}
+
+#main-nav li {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+}
+
+#main-nav a {
+	display: block;
+	text-decoration: none;
+	transition: all 500ms ease-in-out;
+}
+
+#main-nav a:hover {
+	background-color: black;
+	color:white;
+}
+.polaroid {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-right: 30px;
+   	    
+}
+
+.polaroid img {
+    width:96%;
+    height:auto;
+    border: 10px solid #F8F8FF;
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 2px; 
+    border-bottom: 100px solid #F8F8FF;
+
+}
+.thumb {
+	position: relative;
+}
+
+.text{
+	width:100%;
+	/*height:100px;*/
+	position:relative;
+	/*z-index: 10000;*/
+	text-align:center;
+	/*margin-right: 20px;*/
+	margin-left:5px;
+}
+
+.polaroid p { 
+    position: absolute;
+    text-align: center;
+    /*top: 210px;*/
+    /*right: 300px;*/
+    width: 100%;
+    bottom: 15px;
+    font: 400 15px 'Courier New';
+    color: black;
+    /*margin-left: 10px;*/
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column {
+        width: 100%;
+   }
+/*tablet*/
+@media screen and (min-width: 768x) and (max-width: 1024px) {
+	#logo {
+		clear: both;
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
