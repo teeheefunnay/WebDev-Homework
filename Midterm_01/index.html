@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Foodie Adventure Time</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Foodie Adventure Time</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('img').each(function() {
+        $(this).bind("click", function() {
+          if($(this).css("outlineColor") === 'rgb(0, 0, 0)') {
+            $(this).css("outlineColor", "#f92fbe");
+            $(this).css("outlineWidth", "5px");
+          } else {
+            $(this).css("outlineColor", "black");
+            $(this).css("outlineWidth", "2px");
+          }
+        })
+      })
+    })
+  </script>
 </head>
 <body>
 <header>
-	<nav class="clear-fix">
-		<h1 id="logo">Foodie Adventure Time</h1>
-		<ul id="main-nav">
-			<li><a href="food.html">Food</a></li>
-			<li><a href="drinks.html">Drinks</a></li>
-			<li><a href="desserts.html">Dessert</a></li>
-		</ul>
-	</nav>
+  <nav class="clear-fix">
+    <h1 id="logo">Foodie Adventure Time</h1>
+    <ul id="main-nav">
+      <li><a href="food.html">Food</a></li>
+      <li><a href="drinks.html">Drinks</a></li>
+      <li><a href="desserts.html">Dessert</a></li>
+    </ul>
+  </nav>
 </header>
 
 <div class="container-images">
 
 <div class="row"> 
   <div class="column">
-    <img src="img/matcha.jpg">
-    <img src="img/berlin.jpg">
+    <img src="img/matcha.JPG">
+    <img src="img/berlin.JPG">
     <img src="img/black.jpg">
     <img src="img/blueberry.jpg">
-    <img src="img/burger.jpg">
-    <img src="img/cauldron.jpg">
-    <img src="img/poke.jpg">
+    <img src="img/burger.JPG">
+    <img src="img/cauldron.JPG">
+    <img src="img/poke.JPG">
      <img src="img/white.jpg">
-    <img src="img/wings.jpg">
+    <img src="img/wings.JPG">
   </div>
   <div class="column">
-    <img src="img/nekter.jpg">
+    <img src="img/nekter.JPG">
     <img src="img/chacha.jpg">
-    <img src="img/cioppino.jpg">
+    <img src="img/cioppino.JPG">
     <img src="img/crepe.jpg">
-    <img src="img/daikokuya.jpg">
-    <img src="img/dole.jpg">
-    <img src="img/cc.jpg">
+    <img src="img/daikokuya.JPG">
+    <img src="img/dole.JPG">
+    <img src="img/cc.JPG">
     <img src="img/trdlo.jpg">
     <img src="img/venice.jpg">
   </div> 
   <div class="column">
     <img src="img/grace.jpg">
-    <img src="img/greecologies.jpg">
+    <img src="img/greecologies.JPG">
     <img src="img/hemingway.jpg">
-    <img src="img/ladym.jpg">
-    <img src="img/lemonade.jpg">
-    <img src="img/linx.jpg">
-    <img src="img/loop.jpg">
-    <img src="img/zero.jpg">
-    <img src="img/snooze.jpg">
+    <img src="img/ladym.JPG">
+    <img src="img/lemonade.JPG">
+    <img src="img/linx.JPG">
+    <img src="img/loop.JPG">
+    <img src="img/zero.JPG">
+    <img src="img/snooze.JPG">
   </div>
   <div class="column">
     <img src="img/nitrogen.jpg">
-    <img src="img/rw.jpg">
-    <img src="img/sangria.jpg">
+    <img src="img/rw.JPG">
+    <img src="img/sangria.JPG">
     <img src="img/omelegg.jpg">
-    <img src="img/pancake.jpg">
-    <img src="img/pokpok.jpg">
-    <img src="img/roasting.jpg">
-    <img src="img/salt.jpg">
-    <img src="img/baguette.jpg">
+    <img src="img/pancake.JPG">
+    <img src="img/pokpok.JPG">
+    <img src="img/roasting.JPG">
+    <img src="img/salt.JPG">
+    <img src="img/baguette.JPG">
   </div>
   </div>
 </div>
-
 
 </body>
 </html>
