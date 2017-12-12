@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding to the DOM</title>
+</head>
+<body>
+	<button onclick="addSingleP()" >Add a single P Function></button>
+	<button onclick="addMultiP(8)">Add multiple paragraphs with a parameter</button>
+	<div id="content"></div>
+
+	<script type="text/javascript">
+		var content;
+		content= document.getElementByID ('content');
+
+		fuction addSingleP () {
+			content.innerHTML = '<p> This is a single paragraph tag added the bad way </p>'
+		}
+
+		function addMultiP(n) {
+			for (var i =0; i <n; i++){
+				console.log (i);
+				var p= document.createElement ('P');
+				var text= document.createTextNode ('This is paragraph number: ' +i);
+				p.appendChild (text);
+				conent.appendchild(p);
+			}
+		}
+	</script>
+
+</body>
+</html>

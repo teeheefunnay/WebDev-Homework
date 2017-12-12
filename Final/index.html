@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiffany Shu's Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  	$(document).ready(function() {
+  		$('#contact-submit').click(function(e) {
+  			e.preventDefault();
+  			$('#contact-form').hide();
+  			$('#contact-success').show();
+  		})
+  	})
+  </script>
+
+   <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<header>
+  <nav class="clear-fix">
+    <h1 id="logo">Tiffany Shu's Portfolio</h1>
+    <ul class="header-bar" id="main-nav">
+    	<li id="last-link" class="header-bar"><a href="#contact">Contact</a></li>
+    	<li class="header-bar"><a href="#graphic-design">Graphic Design</a></li>
+    	<li class="header-bar"><a href="#video">Video</a></li>
+    	<li class="header-bar"><a href="#about">About</a></li>
+      
+    </ul>
+  </nav>
+</header>
+<div style="padding-top:60px;">
+	&nbsp;
+</div>
+<div id="home" class="parallax" style="background-image:url('img/bae1.jpg');"></div>
+
+
+ <!-- About -->
+<div id="about" class="parallax" style="background-image:url('img/thai.jpg');">
+  <div class="about-container">
+  	<div class="about-photo">
+  		<img id="my-photo" src="img/paris.jpg">
+  	</div>
+  	<div class="about-content">
+  		<h1>Tiffany Shu</h1>
+    	<p>A young but growing graphic designer, photographer and videographer from Anaheim Hills, California. I'm currently getting my Bachelor of Studies in Integrated Digital Media at NYU Tandon School of Engineering. When I'm not creating things online, I love exploring new food places, traveling the world, going to festivals and documenting it all through her camera.</p>
+  	</div>
+  </div>
+</div>
+
+<div id="video" class="parallax" style="background-image:url('img/g1.jpg')">
+  <iframe width="1120" height="630" src="https://www.youtube.com/embed/y-Du3QZ0eOQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  	<!-- <div class="owl-carousel owl-theme">
+      <div class="item-video" data-merge="3"><a class="owl-video" href="https://www.youtube.com/watch?v=y-Du3QZ0eOQ"></a></div>
+      <div class="item-video" data-merge="1"><a class="owl-video" href="https://www.youtube.com/watch?v=TKn-EhhV0-k"></a></div>
+      <div class="item-video" data-merge="2"><a class="owl-video" href="https://www.youtube.com/watch?v=PJBnmRgiXrY"></a></div>
+    </div> -->
+  </div>
+  <div id="video" class="parallax" style="background-image:url('img/view.jpg');"> 
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/TKn-EhhV0-k" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div id="video" class="parallax" style="background-image:url('img/g2.jpg');">
+    <iframe width="1120" height="630" src="https://www.youtube.com/embed/PJBnmRgiXrY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+
+<div id="graphic-design" class="parallax" style="background-image:url('img/mirror.jpg');">
+  <div class="about-container">
+  <div class="container">
+  <h2>Graphic Design: Foodie Adventure Time</h2>  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="img/cover.png" alt="Foodie Adventure Time" style="width:75%; margin: auto;">
+      </div>
+
+      <div class="item">
+        <img src="img/draft1.png" alt="Sketches" style="width:40%; height:500px; margin: auto; ">
+      </div>
+    
+      <div class="item">
+        <img src="img/draft2.png" alt="Sketches" style="width:40%; height:500px; margin: auto;">
+      </div>
+
+       <div class="item">
+        <img src="img/draft3.png" alt="Draft 2" style="width:40%; height:500px; margin: auto;">
+      </div>
+
+       <div class="item">
+        <img src="img/draft4.png" alt="Final variation" style="width:40%; height:500px; margin: auto;">
+      </div>
+       <div class="item">
+        <img src="img/final.png" alt="Draft 1" style="width:40%; height:500px; margin: auto;">
+      </div>
+
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+  	
+  </div>
+</div>
+
+<div id="contact" class="parallax" style="background-image:url('img/merica.jpg');">
+<div class="about-container">
+  	<div class="about-photo">
+  		<img id="my-photo" src="img/me.jpg">
+  	</div>
+<div class="container" id = "contact-form">
+  <form id="contact-form">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="email" name="emailaddress" placeholder="Your email address..">
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input id="contact-submit" type="submit" value="Submit">
+  </form>
+  <div id="contact-success">Thanks for reaching out to me! I'll respond back as soon as I can! Have a nice day! :) </div>
+</div>
+</div>
+</body>
+</html>

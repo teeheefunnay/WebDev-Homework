@@ -1,0 +1,119 @@
+.parallax {
+  
+  min-height: 800px; 
+  max-height: 800px;
+
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo, #main-nav, .header-bar {
+  display: inline-block;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding:0;
+  height: 10px;
+  font-family: "Helvetica";
+  font-size:20px;
+}
+
+.header-bar {
+  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+}
+
+#logo {
+  padding-left: 50px;
+}
+#logo a {
+  text-decoration: none;
+}
+
+#last-link {
+  padding-right: 40px;
+}
+#home {
+  padding-top: 70px;
+}
+
+#about, #video, #graphic-design, #contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  width: 500px;
+  display: inline-block;
+  float: left;
+  background-color: rgba(234 ,251,250, 0.3);
+  padding: 30px;
+}
+
+.about-photo {
+  float: left;
+  padding-right: 100px;
+}
+
+#my-photo {
+  width: 500px;
+  height: 500px;
+}
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #043632; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+}
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+#contact-form{
+  width:700px;
+  padding-right:40px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #d7f5f3;
+    padding: 20px;
+    float: right;
+    width: 600px;
+}
+
+
+#contact-success {
+  display: none;
+}
